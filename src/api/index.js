@@ -1,13 +1,18 @@
 import axios from 'axios'
-import CountryPicker from '../components/CountryPicker/CountryPicker';
 
 const url = 'https://covid19.mathdro.id/api';
 
 //functions fetch some data needed
 //asynchronous function
-export const fetchData = async () => {
+export const fetchData = async (country) => {
+    let changeableUrl = url;
+
+    if(country) {
+        changeableUrl = `${url}/countries/${country}`;
+    }
+
     try {
-        const { data: { confirmed, recovered, deaths, lastUpdate } } = await axios.get(url);
+        const { data: { confirmed, recovered, deaths, lastUpdate } } = await axios.get(changeableUrl);
 
         return { confirmed, recovered, deaths, lastUpdate };
     } catch (error) {
@@ -15,7 +20,7 @@ export const fetchData = async () => {
     }
 }
 
-//for chart
+//Chart
 export const fetchDailyData = async () => {
     try {
         const { data } = await axios.get(`${url}/daily`);
