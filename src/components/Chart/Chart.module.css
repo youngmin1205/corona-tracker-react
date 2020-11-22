@@ -4,3 +4,11 @@
     width: 85%;
 
 }
+
+/* tablet, mobile */
+@media (max-width: 770px) {
+    .container {
+        width: 100%;
+    }
+
+}

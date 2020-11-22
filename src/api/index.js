@@ -13,7 +13,7 @@ export const fetchData = async (country) => {
 
     try {
         const { data: { confirmed, recovered, deaths, lastUpdate } } = await axios.get(changeableUrl);
-
+        //return the data only we need
         return { confirmed, recovered, deaths, lastUpdate };
     } catch (error) {
         console.log(error);
