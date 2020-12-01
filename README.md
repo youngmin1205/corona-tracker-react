@@ -13,4 +13,4 @@ The Tracker will show updated number of "infected", "recovered", "Deaths" and li
 `npm start`
 
 ### Source
-Youtube Tutorial I followed: https://www.youtube.com/watch?v=7IFhsbfby9s
+Youtube Tutorial I followed: https://www.youtube.com/watch?v=khJlrj3Y6Ls
