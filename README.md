@@ -7,10 +7,10 @@
 This is the COVID-19 Tracker project using ReactJS, Chart.js and Material UI.\
 The Tracker will show updated number of "infected", "recovered", "Deaths" and line chart, bar chart.
 
-## Set Up
+### Set Up
 
 `npm install`\
 `npm start`
 
 ### Source
-Youtube Tutorial I followed: https://www.youtube.com/watch?v=khJlrj3Y6Ls
+Youtube Tutorial: https://www.youtube.com/watch?v=khJlrj3Y6Ls
